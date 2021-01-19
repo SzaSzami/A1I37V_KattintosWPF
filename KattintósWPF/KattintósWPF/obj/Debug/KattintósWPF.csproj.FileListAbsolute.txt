@@ -13,3 +13,6 @@ C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\
 C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.csproj.CoreCompileInputs.cache
 C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.exe
 C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.pdb
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.csprojAssemblyReference.cache
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\Start.g.cs
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\Start.baml
