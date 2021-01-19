@@ -1,0 +1,15 @@
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\bin\Debug\KattintósWPF.exe.config
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\bin\Debug\KattintósWPF.exe
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\bin\Debug\KattintósWPF.pdb
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\MainWindow.g.cs
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\App.g.cs
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF_Content.g.cs
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF_MarkupCompile.cache
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF_MarkupCompile.lref
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\MainWindow.baml
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.g.resources
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.Properties.Resources.resources
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.csproj.GenerateResource.cache
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.csproj.CoreCompileInputs.cache
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.exe
+C:\Users\szabc\Documents\GitHub\A1I37V_KattintosWPF\KattintósWPF\KattintósWPF\obj\Debug\KattintósWPF.pdb
