@@ -13,5 +13,6 @@
         <Label FontSize="20" Name="KihagyottText" Content="Kihagyott: 0" RenderTransformOrigin="0.635,13.145" Canvas.Left="307" Canvas.Top="521" />
         <Label FontSize="20" Name="SzintText" Content="Szint: 1" RenderTransformOrigin="0.635,13.145" Canvas.Left="174" Canvas.Top="521" />
         <Button Content="X" Name="Vissza" Canvas.Left="396" Width="30" Height="33" Click="Vissza_Click" Canvas.Top="19"/>
+        <Label Content="" Name="lblName" Canvas.Left="307" Canvas.Top="22" Width="84"/>
     </Canvas>
 </Window>

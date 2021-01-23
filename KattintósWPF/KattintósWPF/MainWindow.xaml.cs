@@ -17,12 +17,15 @@ using System.Windows.Threading;
 namespace KattintósWPF
 {
 
+    
     public partial class MainWindow : Window
     {
+        public static string felhasznalo;
+
         public MainWindow()
         {
             InitializeComponent();
-
+            lblBejelentkezveMint.Content = InputDialogSample.testFelhasznalonev;
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
@@ -35,6 +38,18 @@ namespace KattintósWPF
         private void Kilepes_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void Jatekosnev_Click(object sender, RoutedEventArgs e)
+        {
+            InputDialogSample inputDialog = new InputDialogSample("Kérlek add meg a neved!","Ide írj...");
+            if (inputDialog.ShowDialog() == true)
+            {
+                felhasznalo = inputDialog.Answer;
+                lblBejelentkezveMint.Content = InputDialogSample.testFelhasznalonev;
+            }
+                
+            
         }
     }
 }

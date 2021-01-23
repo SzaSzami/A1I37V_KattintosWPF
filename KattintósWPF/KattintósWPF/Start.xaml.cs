@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -14,11 +15,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using MySql.Data.MySqlClient;
+using System.Configuration;
+
 
 namespace KattintósWPF
 {
     public partial class Start : Window
     {
+        private string connectionString = "Server=localhost;Database=wpfjatekosok;Port=3308;Uid=root;Pwd=;";
+
         DispatcherTimer idozito = new DispatcherTimer();
         DispatcherTimer xx = new DispatcherTimer();
         int sebesseg = 3;
@@ -49,6 +55,44 @@ namespace KattintósWPF
             hatterkep.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Files/background-Image.jpg"));
             MyCanvas.Background = hatterkep;
             Restart();
+            lblName.Content = MainWindow.felhasznalo;
+
+        }
+        public class Jatekosok
+        {
+            private string playername;
+            private int score;
+
+            public string PlayerName
+            {
+                get
+                {
+                    return playername;
+                }
+                set
+                {
+                    if (value.Length == 0)
+                    {
+                        playername = "defaultPlayer";
+                    }
+                    else
+                    {
+                        playername = value;
+                    }
+                }
+            }
+
+            public int Score
+            {
+                get
+                {
+                    return score;
+                }
+                set
+                {
+                    score = value;
+                }
+            }
         }
 
         private void GameEngine(object sender, EventArgs e)
@@ -135,15 +179,40 @@ namespace KattintósWPF
                 MyCanvas.Children.Remove(y);
             }
             //játék vége
-            if (kihagyott > 30)
+            if (kihagyott > 10)
             {
                 futAJatek = false;
                 idozito.Stop();
                 xx.Stop();
-                MessageBox.Show("Vége a játéknak!" + Environment.NewLine + "Kattints az OK gombra az újrakezdéshez!");
+
+                #region pontszám feltöltése adatbázisba
+                try
+                {
+                    MySqlConnection connection = new MySqlConnection();
+                    connection.ConnectionString = connectionString;
+                    connection.Open();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = connection;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "INSERT INTO jatekosoktabla(jatekos_nev, pont_szam) VALUES(@jatekos_nev, @pont_szam)";
+                    cmd.Parameters.AddWithValue("@jatekos_nev", MainWindow.felhasznalo);
+                    cmd.Parameters.AddWithValue("@pont_szam", pontszam);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Nem sikerült a feltöltés az adatbázisba!");
+                }
+                #endregion
+
+                string jatekvege = MainWindow.felhasznalo + " ennyi pontot ért el: " + pontszam + ".";
+                MessageBox.Show("Vége a játéknak! Gratulálok!" + Environment.NewLine + jatekvege + Environment.NewLine + "Kattints az OK gombra az újrakezdéshez!", "10 kihagyott!");
+
                 Restart();
                 szint = 1;
             }
+
         }
 
         //játék sebességének gyorsítása
@@ -168,6 +237,7 @@ namespace KattintósWPF
                 }
             }
         }
+        
 
         private void Indit()
         {

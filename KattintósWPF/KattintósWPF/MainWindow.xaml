@@ -20,7 +20,10 @@
         </Grid.Background>
         <Label Content="Kattintós játék WPF" FontSize="24" Grid.ColumnSpan="2" Margin="114,41,105,457"/>
         <Button Content="Új játék" Name="Start" HorizontalAlignment="Left" Margin="37,188,0,0" VerticalAlignment="Top" Width="359" Height="50" FontSize="24" Grid.ColumnSpan="2" Click="Start_Click"/>
-        <Button Content="Kilépés" Name="Kilepes" HorizontalAlignment="Left" Margin="37,320,0,0" VerticalAlignment="Top" Width="359" Height="50" FontSize="24" Grid.ColumnSpan="2" Click="Kilepes_Click"/>
+        <Button Content="Kilépés" Name="Kilepes" HorizontalAlignment="Left" Margin="37,362,0,0" VerticalAlignment="Top" Width="359" Height="50" FontSize="24" Grid.ColumnSpan="2" Click="Kilepes_Click"/>
+        <Button Content="Játékosnév megadása" x:Name="Jatekosnev" HorizontalAlignment="Left" Margin="37,273,0,0" VerticalAlignment="Top" Width="359" Height="50" FontSize="24" Grid.ColumnSpan="2" Click="Jatekosnev_Click"/>
+        <Label Content="Jelenleg bejelentkezve, mint: " HorizontalAlignment="Left" Margin="37,532,0,0" VerticalAlignment="Top" Width="185"/>
+        <Label Content="" Name="lblBejelentkezveMint" Grid.Column="1" HorizontalAlignment="Left" Margin="10,532,0,0" VerticalAlignment="Top" Width="134"/>
 
     </Grid>
 
